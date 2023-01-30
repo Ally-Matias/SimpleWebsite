@@ -1,6 +1,12 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
     margin: 0;
     padding: 0;
+    padding-bottom: 300px;
+    background-color: #01072D;
 }
 
 header{
@@ -13,7 +19,8 @@ header{
 .container{
     display: flex;
     justify-content: space-between;
-    width: 990px;
+    width: 90%;
+    max-width: 990px;
 }
 
 .logo{
@@ -41,30 +48,216 @@ nav a{
     padding: 15px;
     text-decoration: none;
     color: #fff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, sans-serif;
+    border-radius: 15px;
+    font-weight: bold;
 }
 
 nav a:hover{
+    border-radius: 15px;
     background-color: #4F5FE8;
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
 #banner{
+    display: flex;
+    justify-content: center;
     background-image: url('../images/Banner.jpg');
     background-position: center;
     background-size: cover;
     height: 670px;
 }
 
+.column{
+    flex-direction: column;
+}
+
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1{
+    color: #FFFFFF;
+    font-size: 55px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.banner_headline h2{
+    color: #FFF;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 30px;
+}
+
+.banner_options{
+    height: 210px;
+    display: flex;
+}
+
+.banner1,.banner2,.banner3{
+    flex: 1;
+    color: #FFF;
+    padding: 20px;
+    margin: 5px;
+    background-color: #0D1321;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.banner_title{
+    color: #4F5FE8;
+    font-size: 22px;
+}
+
+.banner_desc{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a{
+    display: inline-block;
+    border: 1px solid #4F5FE8;
+    padding: 5px;
+    color: #4F5FE8;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.banner_options a:hover{
+    background-color: #4F5FE8;
+    color: #01072D;
+    transition: 0.3s;
+}
+
+
+/*    Latest News     */
+
+#geral{
+    display: flex;
+    justify-content: center;
+    background-color: #01072D;
+}
+
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text{
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.widget_title_bar{
+    width: 50px;
+    height: 3px;
+    background-color: #4F5FE8;
+    margin-top: 7px
+}
+
+/* esse é do titulo principal */
+.title_bar{
+    width: 110px;
+    height: 3px;
+    background-color: #4F5FE8;
+    margin-top: 10px;
+}
 
 
 
+/*    services      */
+
+.container_service{
+    display: flex;
+    height: 800px;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 990px;
+}
+
+.banner_services{
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 
+#services{
+    display: flex;
+    justify-content: center;
+    background-color: #01072D;
+}
 
+.service_options{
+    height: 210px;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+}
 
+.service1,.service2,.service3,.service4,
+.service5,.service6{
+    color: #FFF;
+    padding: 15px;
+    margin: 5px;
+    background-color: #0D1321;
+    border-radius: 10px;
+    width: 280px;
+    height: 280px;
+}
 
+.service_title{
+    color: #10E8E4;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 
+.service_desc{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.botao a{
+    display: inline-block;
+    border: 1px solid #10E8E4;
+    padding: 5px;
+    color: #10E8E4;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
+.botao a:hover{
+    background-color: #10E8E4;
+    color: #01072D;
+    transition: 0.3s;
+}
 
+.icon{
+    padding: 10px;
+    text-align: center;
+}
+
+.widget_body{
+    color: #FFF;
+    font-weight: bold;
+}
