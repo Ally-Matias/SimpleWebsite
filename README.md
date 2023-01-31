@@ -4,4 +4,4 @@ Um website simples e responsivo que aborda o tema de metaverse e realidade virtu
 
 ##
 
-Você pode acessar o site por esse link: https://ally-matias.github.io/SimpleWebsite/
+Você pode acessar o site por esse link: https://ally-matias.github.io/Website_Virtual_Reality/
