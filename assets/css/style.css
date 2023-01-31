@@ -206,9 +206,14 @@ article .news_posted_at{
 article .news_comments{
     background-color: #4F5FE8;
     color: #FFF;
-    font-size: 12px;
+    font-size: 13px;
     padding: 10px;
     border-radius: 8px;
+}
+
+article .news_comments img{
+    display: inline-flex;
+    vertical-align: top;
 }
 
 article .news_thumb{
