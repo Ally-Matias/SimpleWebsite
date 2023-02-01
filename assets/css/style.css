@@ -18,7 +18,7 @@ header{
 .container{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     max-width: 990px;
 }
 
@@ -389,3 +389,171 @@ footer{
 .footer_copy strong{
     color: #10E8E4;
 }
+
+.img_footer img{
+    border-radius: 6px;
+    margin-left: 35px;
+}
+
+.widget_body_socials{
+    display: flex;
+}
+
+.widget_body_socials a{
+    margin-left: 10px;
+}
+
+.widget_body_nav a{
+    margin-bottom: 20px;
+}
+
+.widget_body_nav a:hover{
+    color: #10E8E4;
+    font-weight: bold;
+}
+
+.widget_title_text_icon{
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 11px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*   responsividade   */
+
+
+@media (max-width:1144px){
+    .banner_headline h1{
+        font-size: 47px;
+        padding: 25px;
+    }
+    
+    .banner_headline h2{
+        font-size: 22px;
+        padding-left: 25px;
+    }
+
+    .title_bar{
+        width: 50px;
+        margin-left: 25px;
+        margin-bottom: -5px;
+        margin-top: -5px;
+    }
+
+    article{
+        width: 100%;
+        min-width: 230px;
+    }
+
+    .flex{
+        margin-left: 40px;
+    }
+
+    .container_service{
+        height: 1100px;
+    }
+
+    .widget_title{
+        padding-left: 50px;
+    }
+
+    .container_service .widget_title{
+        padding-left: 0px;
+    }
+
+    .footer_copy{
+        padding-left: 30px;
+    }
+
+    .widget_body_socials{
+        padding-left: 50px;
+    }
+
+    .widget_body_nav{
+        padding-left: 50px;
+    }
+}
+
+
+@media (max-width:795px){
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .banner_options div{
+        height: 15px;
+        width: 420px;
+    }
+
+    .banner_options a{
+        margin-top: 10px;;
+    }
+
+    .menu{
+        padding-right: 40px;
+    }
+
+    #banner{
+        height: 680px;
+    }
+
+    .banner_headline h1{
+        font-size: 35px;
+        padding: 20px;
+    }
+    
+    .banner_headline h2{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .title_bar{
+        width: 50px;
+        margin-left: 20px;
+        margin-bottom: -15px;
+        margin-top: -15px;
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+
+    article{
+        width: 100%;
+        max-width: 335px; 
+
+    }
+
+    .flex{
+        margin-left: 40px;
+    }
+
+    .container_service{
+        height: 1100px;
+    }
+
+    .footer_copy{
+        padding-left: 20px;
+    }
+
+    .widget_body_socials{
+        padding-left: 50px;
+    }
+
+    .widget_body_nav{
+        padding-left: 50px;
+    }
+
+}
+
+
+
+
+
+
+
+
