@@ -264,8 +264,6 @@ article .news_resume{
 
 
 
-
-
 /*    services      */
 
 .container_service{
@@ -420,10 +418,32 @@ footer{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.flexColumn .footer_area{
+    margin-left: 100px;
+}
+
+
 /*   responsividade   */
 
 
+@media (min-width: 1144px) {
+    .container_service{
+        height: auto;
+    }
+
+    .flex{
+        margin-left: 20px;
+    }
+
+
+}
+
+
 @media (max-width:1144px){
+    .menu{
+        margin-right: 20px;
+    }
+
     .banner_headline h1{
         font-size: 47px;
         padding: 25px;
@@ -447,34 +467,36 @@ footer{
     }
 
     .flex{
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
     .container_service{
-        height: 1100px;
-    }
-
-    .widget_title{
-        padding-left: 50px;
-    }
-
-    .container_service .widget_title{
-        padding-left: 0px;
+        height: auto;
     }
 
     .footer_copy{
         padding-left: 30px;
     }
 
-    .widget_body_socials{
-        padding-left: 50px;
-    }
-
-    .widget_body_nav{
-        padding-left: 50px;
-    }
+  
 }
 
+
+/* menu mobile */
+
+.menuMobile{
+    display:none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line{
+    height: 3px;
+    background-color: #4F5FE8;
+}
 
 @media (max-width:795px){
     .banner_options{
@@ -529,31 +551,114 @@ footer{
     }
 
     .flex{
-        margin-left: 40px;
+        padding-left: 15px;
     }
 
     .container_service{
-        height: 1100px;
+        height: auto;
     }
 
     .footer_copy{
         padding-left: 20px;
     }
 
-    .widget_body_socials{
-        padding-left: 50px;
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        margin-left: -50px;
+        border-radius: 14px;
+        width: 150px;
+        background-color:#0D1321;
     }
 
-    .widget_body_nav{
-        padding-left: 50px;
+    header{
+        height: auto;
     }
 
+    .logo{
+        padding-left: 20px;
+    }
+
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 
 
 
+@media (max-width:510px) {
+    .banner_headline h1{
+        font-size: 27px;
+        width: 250px;
+    }
+
+    .banner_headline h2{
+        font-size: 16px;
+    }
+
+    .menuMobile{
+        width: 30px;
+        height: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+
+    .banner_options{
+        height: 390px;
+        margin-bottom: 50px;
+        
+    }
+
+    .banner_options div{
+        height: 7px;
+        width: 325px;
+    }
+
+    .banner_options a{
+        margin-top: 8px;;
+    }
+
+    .banner_options .banner_title{
+        font-size: 18px;
+    }
+
+    .banner_options .banner_desc{
+        font-size: 12px;
+        margin-top: 16px;
+    }
+
+    .banner_options a{
+        font-size: 10px;
+        margin-top:20px;
+
+    }
+
+    /* footer  */
+
+    .footer_copy{
+        font-size: 10px;
+    }
+    
+    .footer_area{
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .flexColumn .widget{
+        margin-left: 50px;
+        border-top: 1px solid #555555;
+        margin-right: 50px;
+    }
+
+    .flexColumn .footer_area{
+        margin-left: 70px;
+    }
 
 
-
+}
 
